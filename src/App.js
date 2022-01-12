@@ -16,7 +16,7 @@ const App = () => {
             <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
                 <Container fluid>
                     <Navbar.Brand href='/' style={{ color: 'white', fontWeight: 'bold' }}>
-                        Friends of Hoboken High School
+                        Friends of the New Hoboken High School
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav'>
