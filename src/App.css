@@ -36,33 +36,6 @@ input {
     color: white;
 }
 
-cite {
-    font-weight: bold;
-}
-table {
-    align-content: center;
-    margin: auto;
-}
-td {
-    padding: 10px;
-}
-
-.App-intro {
-    font-size: large;
-}
-.cap-first-letter:first-letter {
-    text-transform: capitalize;
-}
-.col-sm-6,
-col-md-4 {
-    border: 1px;
-}
-
-.hometext {
-    max-width: 60%;
-    font-size: x-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 .showlink {
     padding: 0.4rem 0.8rem;
     background-color: white;
@@ -78,38 +51,56 @@ col-md-4 {
     border: 2px solid white;
 }
 
-li {
-    padding: 20px;
-}
-
 p {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* text-align: center; */
 }
 
-div {
+/* div {
     text-align: center;
-}
+} */
 
 a {
-    color: #9c6969;
+    color: 'blue';
     text-decoration: none !important;
 }
 
-ul a:hover {
+ol,
+ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navLink,
+.navText {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ul a:hover {
     background-color: transparent;
     color: blue;
 }
 
 ul {
     list-style: none;
-}
+} */
 
-.title {
+/* .title {
     font-weight: bold;
     color: #9c6969;
-}
+} */
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     input {
@@ -117,7 +108,7 @@ ul {
     }
 }
 
-button,
+/* button,
 .nav {
     font-size: 16px;
     padding: 0.4rem 0.8rem;
@@ -135,4 +126,4 @@ button:hover,
     color: white;
     border: 2px solid white;
     cursor: pointer;
-}
+} */
