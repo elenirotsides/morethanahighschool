@@ -1,4 +1,4 @@
-import { Container, Row, CardGroup, Card, Button } from 'react-bootstrap';
+import { Container, Row, CardGroup, Card, Button, Col } from 'react-bootstrap';
 import '../App.css';
 import Facilities from '../img/Facilities.png';
 import Dangers from '../img/Dangers.png';
@@ -8,7 +8,33 @@ const Home = () => {
     return (
         <Container>
             <Row>
-                <h1 style={{ textAlign: 'center', paddingTop: '20px' }}>—Together, we can build Hoboken's future—</h1>
+                <h1 style={{ textAlign: 'center', paddingTop: '20px', paddingBottom: '20px' }}>—Together, we can build Hoboken's future—</h1>
+            </Row>
+            <Row>
+                <Col xs={12} xl={6} className='p-2'>
+                    <iframe
+                        // width='1424'
+                        // height='557'
+                        height='400'
+                        style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
+                        src='https://www.youtube.com/embed/R_tavVjZfZ0'
+                        title='YouTube video player'
+                        frameborder='0'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                        allowfullscreen
+                    ></iframe>
+                </Col>
+                <Col xs={12} xl={6} className='p-2'>
+                    <iframe
+                        src='https://online.flippingbook.com/view/781450059/'
+                        title='FlipBook'
+                        height='400'
+                        frameborder='0'
+                        scrolling='no'
+                        style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
+                        allowFullScreen
+                    ></iframe>
+                </Col>
             </Row>
             <Row style={{ paddingTop: '20px' }}>
                 <CardGroup>

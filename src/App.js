@@ -27,8 +27,8 @@ const App = () => {
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav className='me-auto'>
-                            <Nav.Link className='navLink' href='about' style={{ color: 'white', fontSize: '20px' }}>
-                                About
+                            <Nav.Link className='navLink' href='/' style={{ color: 'white', fontSize: '20px' }}>
+                                Home
                             </Nav.Link>
                             <Nav.Link className='navLink' href='vote' style={{ color: 'white', fontSize: '20px' }}>
                                 Vote
@@ -69,7 +69,12 @@ const App = () => {
             <Container fluid style={{ backgroundColor: '#d60001', textAlign: 'center' }}>
                 <Row>
                     <Col xs={12}>
-                        <img src={img2} alt="Graphic that urges voters to vote 'Yes' on Jan. 25" style={{ width: '75%' }} />
+                        {/* style={{ border: '10px solid black' }} */}
+                        <img
+                            src={img2}
+                            alt="Graphic that urges voters to vote 'Yes' on Jan. 25"
+                            style={{ width: '50%', border: '10px solid black' }}
+                        />
                     </Col>
                 </Row>
             </Container>
