@@ -1,18 +1,81 @@
-// import React from 'react';
 import '../App.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Contact page content will go here</h1>
-            <p className='hometext'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quos molestias libero dolore. Placeat saepe possimus
-                deserunt alias dolor, itaque dolorum repudiandae. Voluptatibus ducimus, modi vitae quia ipsa quas? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Ipsam, mollitia illo? Adipisci nulla illum dolores quisquam beatae animi, cum fuga id voluptatum, ipsam,
-                at excepturi amet corporis enim voluptas molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea qui ipsa sit quaerat,
-                incidunt nisi amet accusamus eaque nihil consequatur voluptates iure voluptate, sapiente quisquam dolorum, libero possimus ut? Id?
-            </p>
-        </div>
+        <Container>
+            <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+                {' '}
+                <div style={{ textAlign: 'center' }}>
+                    <div style={{ border: '5px #c40303 solid', borderRadius: '2rem', backgroundColor: '#c40303' }}>
+                        {' '}
+                        <h1 style={{ color: 'white', fontSize: '30px' }}>We are the Friends of the New Hoboken High School</h1>
+                    </div>
+                </div>
+            </Row>
+            <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+                <div className='contact' style={{ border: ' 5px #a7a6a6 solid', borderRadius: '2rem', backgroundColor: '#a7a6a6' }}>
+                    <p>
+                        We are a group of Hoboken parents and residents who are proud of our schools, invested in and committed to Hoboken’s future,
+                        and thrilled about the opportunity to make this major investment in our community. We believe a new High School can benefit
+                        everyone in Hoboken. For our children and students - a public education journey that will be enhanced and more fully supported
+                        beginning in their elementary and middle school years and culminating in a state-of-the-art high school featuring classrooms,
+                        labs, and spaces equipped for 21st century learning and success. Further, all Hoboken residents and families will have the
+                        opportunity to utilize arts and recreation facilities that will help meet the needs of our growing city. <br /> <br />
+                        <span style={{ fontWeight: 'bold' }}>
+                            We understand that this is #MoreThanAHighSchool - this is the chance to build for the future of our schools and our
+                            community!
+                        </span>
+                    </p>
+
+                    <ul style={{ listStyle: 'none' }}>
+                        <li>Adrienne Appell</li>
+                        <li>Laura Block</li>
+                        <li>Kim Church</li>
+                        <li>Michele Daly</li>
+                        <li>Erica Gavin </li>
+                        <li>Antonio Grana</li>
+                        <li>Bethlehem Gregory</li>
+                        <li>Nicole Jala</li>
+                        <li>Jane Mylan</li>
+                        <li>Renee Perry</li>
+                        <li>Tatyana Zlotsky </li>
+                    </ul>
+
+                    <p>
+                        <span style={{ fontWeight: 'bold' }}>Questions?</span>{' '}
+                        <a href='mailto: morethanahighschool@gmail.com' style={{ color: 'blue' }}>
+                            morethanahighschool@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </Row>
+            {/* <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+                <div
+                    className='contact'
+                    style={{
+                        border: ' 5px #9a9a9a solid',
+                        borderRadius: '2rem',
+                        backgroundColor: '#9a9a9a',
+                        textAlign: 'center',
+                    }}
+                >
+                    <ul>
+                        <li>Adrienne Appell</li>
+                        <li>Laura Block</li>
+                        <li>Kim Church</li>
+                        <li>Michele Daly</li>
+                        <li>Erica Gavin </li>
+                        <li>Antonio Grana</li>
+                        <li>Bethlehem Gregory</li>
+                        <li>Nicole Jala</li>
+                        <li>Jane Mylan</li>
+                        <li>Renee Perry</li>
+                        <li>Tatyana Zlotsky </li>
+                    </ul>
+                </div>
+            </Row> */}
+        </Container>
     );
 };
 
