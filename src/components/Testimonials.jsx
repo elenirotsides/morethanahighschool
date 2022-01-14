@@ -12,7 +12,7 @@ const Testimonials = () => {
             link: 'https://www.youtube.com/embed/4Pfkzkzga1w',
         },
         {
-            name: 'Wallace Science Teacher, President of the Hoboken Education Association and lifelong Hoboken resident',
+            name: 'Wallace Teacher, President of the Hoboken Education Association and lifelong Hoboken resident',
             link: 'https://www.youtube.com/embed/i90DU-PwVA0',
         },
         {

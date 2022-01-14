@@ -30,14 +30,14 @@ const Contact = () => {
 
                     <ul style={{ listStyle: 'none' }}>
                         <li>Adrienne Appell</li>
-                        <li>Laura Block</li>
-                        <li>Kim Church</li>
-                        <li>Michele Daly</li>
-                        <li>Erica Gavin </li>
                         <li>Antonio Grana</li>
                         <li>Bethlehem Gregory</li>
-                        <li>Nicole Jala</li>
+                        <li>Erica Gavin</li>
                         <li>Jane Mylan</li>
+                        <li>Kim Church</li>
+                        <li>Laura Block</li>
+                        <li>Michele Daly</li>
+                        <li>Nicole Jala</li>
                         <li>Renee Perry</li>
                         <li>Tatyana Zlotsky </li>
                     </ul>
@@ -50,31 +50,6 @@ const Contact = () => {
                     </p>
                 </div>
             </Row>
-            {/* <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                <div
-                    className='contact'
-                    style={{
-                        border: ' 5px #9a9a9a solid',
-                        borderRadius: '2rem',
-                        backgroundColor: '#9a9a9a',
-                        textAlign: 'center',
-                    }}
-                >
-                    <ul>
-                        <li>Adrienne Appell</li>
-                        <li>Laura Block</li>
-                        <li>Kim Church</li>
-                        <li>Michele Daly</li>
-                        <li>Erica Gavin </li>
-                        <li>Antonio Grana</li>
-                        <li>Bethlehem Gregory</li>
-                        <li>Nicole Jala</li>
-                        <li>Jane Mylan</li>
-                        <li>Renee Perry</li>
-                        <li>Tatyana Zlotsky </li>
-                    </ul>
-                </div>
-            </Row> */}
         </Container>
     );
 };
