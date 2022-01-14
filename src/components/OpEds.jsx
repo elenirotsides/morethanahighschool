@@ -91,6 +91,7 @@ const OpEds = () => {
                         data-allowfullscreen='true'
                     >
                         <blockquote cite='https://www.facebook.com/RonBautistaNJ/videos/1367533730316439/' class='fb-xfbml-parse-ignore'>
+                            {/* eslint-disable-next-line */}
                             <a href='https://www.facebook.com/RonBautistaNJ/videos/1367533730316439/'></a>
                             <p>
                                 #TheRedwingWay! As a 2004 alum and as a parent, I’m voting YES on January 25th for a new state of the art #Hoboken
