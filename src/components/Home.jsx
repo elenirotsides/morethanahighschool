@@ -1,6 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import '../App.css';
-// import bannerMessage from '../img/bannerMessage.png';
 
 const Home = () => {
     return (
@@ -19,7 +18,6 @@ const Home = () => {
                         textAlign: 'center',
                     }}
                 >
-                    {/* <img src={bannerMessage} alt="Together we can build Hoboken's future" /> */}
                     <div style={{ border: ' 5px #c40303 solid', borderRadius: '2rem', backgroundColor: '#c40303' }}>
                         {' '}
                         <h1 style={{ color: 'white', fontSize: '30px' }}>Together we can build Hoboken's future</h1>
@@ -27,7 +25,6 @@ const Home = () => {
                 </Col>
             </Row>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                {/* <Col xs={12} sm={6} style={{ paddingTop: '20px', paddingBottom: '20px' }}> */}
                 <div style={{ border: ' 5px #a7a6a6 solid', borderRadius: '2rem', backgroundColor: '#a7a6a6' }}>
                     <h1 style={{ fontSize: '30px', textAlign: 'center' }}>We must act now to:</h1>
                     <ul className='checkmarkListGroup'>
@@ -36,11 +33,6 @@ const Home = () => {
                         <li className='checkmark'>Provide Facilities Needed to Fully Implement the District's 21st Century Academic Curriculum</li>
                     </ul>
                 </div>
-
-                {/* </Col> */}
-                {/* <Col xs={12} sm={6} style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                    <p>test</p>
-                </Col> */}
             </Row>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <div style={{ border: ' 5px #c40303 solid', borderRadius: '2rem', backgroundColor: '#c40303', textAlign: 'center' }}>
@@ -62,7 +54,7 @@ const Home = () => {
                         title='YouTube video player'
                         frameborder='0'
                         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                        allowfullscreen
+                        allowfullscreen='true'
                     ></iframe>
                 </Col>
                 <Col xs={12} xl={6} className='p-2'>
@@ -80,17 +72,19 @@ const Home = () => {
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <h1 className='moreInfo'>Additional Information</h1>
                 <div style={{ textAlign: 'center', fontSize: '20px' }}>
-                    <a
-                        href='https://docs.google.com/document/d/11MW9ZIi6q5nUkcYby7bFZ7g5YvcuMtuLm7hSvBBO7Do/edit?usp=sharing'
-                        style={{ color: 'blue' }}
+                    <span
+                        onClick={() =>
+                            window.open('https://docs.google.com/document/d/11MW9ZIi6q5nUkcYby7bFZ7g5YvcuMtuLm7hSvBBO7Do/edit?usp=sharing', '_blank')
+                        }
+                        style={{ cursor: 'pointer', color: 'blue' }}
                     >
                         Referendum FAQ
-                    </a>
+                    </span>
                     <p>
                         For more information on the plan please visit{' '}
-                        <a href='www.hoboken.k12.nj.us' style={{ color: 'blue' }}>
+                        <span onClick={() => window.open('http://www.hoboken.k12.nj.us/', '_blank')} style={{ cursor: 'pointer', color: 'blue' }}>
                             www.hoboken.k12.nj.us
-                        </a>
+                        </span>
                         .
                     </p>
                 </div>

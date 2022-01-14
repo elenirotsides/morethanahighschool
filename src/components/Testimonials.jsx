@@ -1,27 +1,68 @@
 import '../App.css';
+import { Container, Row, Card, CardGroup, Col } from 'react-bootstrap';
 
 const Testimonials = () => {
+    const cardData = [
+        {
+            name: 'Lucas, HMS Student',
+            link: 'https://www.youtube.com/embed/vgTaJDBwmPQ',
+        },
+        {
+            name: 'HHS Teacher & District Parent',
+            link: 'https://www.youtube.com/embed/4Pfkzkzga1w',
+        },
+        {
+            name: 'Wallace Science Teacher, President of the Hoboken Education Association and lifelong Hoboken resident',
+            link: 'https://www.youtube.com/embed/i90DU-PwVA0',
+        },
+        {
+            name: 'HHS Principal, 26-year Hoboken Resident and Homeowner/Taxpayer',
+            link: 'https://www.youtube.com/embed/q8z1NO_5MaU',
+        },
+    ];
+
+    const renderCard = (card, index) => {
+        return (
+            <Col className='col-12 col-md-6'>
+                <div className='m-3'>
+                    <Card
+                        style={{
+                            textAlign: 'center',
+                            width: '100%',
+                            fontFamily: 'Georgia, Times New Roman, Times, serif',
+                            fontSize: '20px',
+                            backgroundColor: index % 2 === 0 ? '#a7a6a6' : '#cba7a7',
+                            borderRadius: '1rem',
+                            className: 'box',
+                        }}
+                    >
+                        <Card.Body>
+                            <Card.Header>{card.name}</Card.Header>
+                            <iframe
+                                // width='1424'
+                                // height='557'
+                                height='400'
+                                style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
+                                src={card.link}
+                                title='YouTube video player'
+                                frameborder='0'
+                                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                                allowfullscreen='true'
+                                key={index}
+                            ></iframe>
+                        </Card.Body>
+                    </Card>
+                </div>
+            </Col>
+        );
+    };
+
     return (
-        <div>
-            <h1>Testimonials page content will go here</h1>
-            <p className='hometext'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quos molestias libero dolore. Placeat saepe possimus
-                deserunt alias dolor, itaque dolorum repudiandae. Voluptatibus ducimus, modi vitae quia ipsa quas? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Ipsam, mollitia illo? Adipisci nulla illum dolores quisquam beatae animi, cum fuga id voluptatum, ipsam,
-                at excepturi amet corporis enim voluptas molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea qui ipsa sit quaerat,
-                incidunt nisi amet accusamus eaque nihil consequatur voluptates iure voluptate, sapiente quisquam dolorum, libero possimus ut?
-                Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quos molestias libero dolore. Placeat saepe possimus
-                deserunt alias dolor, itaque dolorum repudiandae. Voluptatibus ducimus, modi vitae quia ipsa quas? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Ipsam, mollitia illo? Adipisci nulla illum dolores quisquam beatae animi, cum fuga id voluptatum, ipsam,
-                at excepturi amet corporis enim voluptas molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea qui ipsa sit quaerat,
-                incidunt nisi amet accusamus eaque nihil consequatur voluptates iure voluptate, sapiente quisquam dolorum, libero possimus ut?
-                Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quos molestias libero dolore. Placeat saepe possimus
-                deserunt alias dolor, itaque dolorum repudiandae. Voluptatibus ducimus, modi vitae quia ipsa quas? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Ipsam, mollitia illo? Adipisci nulla illum dolores quisquam beatae animi, cum fuga id voluptatum, ipsam,
-                at excepturi amet corporis enim voluptas molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea qui ipsa sit quaerat,
-                incidunt nisi amet accusamus eaque nihil consequatur voluptates iure voluptate, sapiente quisquam dolorum, libero possimus ut? Id?
-            </p>
-        </div>
+        <Container>
+            <Row style={{ paddingTop: '20px' }}>
+                <CardGroup className='grid justify-content-md-center'>{cardData.map(renderCard)}</CardGroup>
+            </Row>{' '}
+        </Container>
     );
 };
 

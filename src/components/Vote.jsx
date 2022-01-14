@@ -4,10 +4,8 @@ import { Row, Col } from 'react-bootstrap';
 
 const Vote = () => {
     return (
-        // <Container fluid style={{ paddingTop: '20px' }}>
         <Row className='p-5'>
             <Col xs={12} lg={3}>
-                {/* height: '230px', float: 'left', paddingLeft: '20px', paddingRight: '20px' */}
                 <img
                     className='img-responsive'
                     src={vote}
@@ -91,8 +89,13 @@ const Vote = () => {
                         6am-8pm.{' '}
                         <span style={{ color: '#ba0001', fontWeight: 'bold' }}>
                             Find your polling site location at{' '}
-                            <a href='https://voter.svrs.nj.gov/polling-place-search'>https://voter.svrs.nj.gov/polling-place-search</a> and make a
-                            plan now to vote!
+                            <span
+                                onClick={() => window.open('https://voter.svrs.nj.gov/polling-place-search', '_blank')}
+                                style={{ cursor: 'pointer', color: 'blue' }}
+                            >
+                                https://voter.svrs.nj.gov/polling-place-search
+                            </span>{' '}
+                            and make a plan now to vote!
                         </span>
                     </p>
                     <p style={{ fontSize: '25px', fontWeight: 'bold' }}>
@@ -101,9 +104,7 @@ const Vote = () => {
                     </p>
                 </div>
             </Col>
-            {/* <Col xs={12}></Col> */}
         </Row>
-        // </Container>
     );
 };
 
