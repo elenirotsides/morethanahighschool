@@ -105,7 +105,7 @@ const App = () => {
             <Navbar bg='dark' variant='dark' sticky='bottom'>
                 <Container fluid>
                     <Navbar.Text className='navText m-2'>
-                        <span style={{ fontSize: '20px' }}>Paid for by the Friends of the New Hoboken High School</span> <br />
+                        <span style={{ fontSize: '20px' }}>Paid for by Friends of the New Hoboken High School</span> <br />
                         <span style={{ fontSize: '15px' }}>600 Jackson Street, Hoboken, NJ 07030</span>
                     </Navbar.Text>
                     <Nav>
