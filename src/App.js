@@ -1,6 +1,7 @@
 import './App.css';
 // import img from './img/img1.png';
-import img2 from './img/img2.png';
+// import img2 from './img/img2.png';
+import img3 from './img/img3.png';
 import logo from './img/logo.png';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap';
@@ -8,8 +9,10 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Home from './components/Home';
-import About from './components/About';
+import KeyFacts from './components/KeyFacts';
 import Vote from './components/Vote';
+import Testimonials from './components/Testimonials';
+import OpEds from './components/OpEds';
 import Contact from './components/Contact';
 
 const App = () => {
@@ -27,17 +30,23 @@ const App = () => {
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav className='me-auto'>
-                            <Nav.Link className='navLink' href='about' style={{ color: 'white', fontSize: '20px' }}>
-                                About
+                            <Nav.Link className='navLink' href='/' style={{ color: 'white', fontSize: '20px' }}>
+                                Home
+                            </Nav.Link>
+                            <Nav.Link className='navLink' href='key-facts' style={{ color: 'white', fontSize: '20px' }}>
+                                Key Facts
                             </Nav.Link>
                             <Nav.Link className='navLink' href='vote' style={{ color: 'white', fontSize: '20px' }}>
                                 Vote
                             </Nav.Link>
-                            <Nav.Link className='navLink' href='op-ed' style={{ color: 'white', fontSize: '20px' }}>
+                            <Nav.Link className='navLink' href='testimonials' style={{ color: 'white', fontSize: '20px' }}>
+                                Testimonials
+                            </Nav.Link>
+                            <Nav.Link className='navLink' href='op-eds' style={{ color: 'white', fontSize: '20px' }}>
                                 Op-Eds
                             </Nav.Link>
                             <Nav.Link className='navLink' href='contact' style={{ color: 'white', fontSize: '20px' }}>
-                                Contact
+                                Who We Are
                             </Nav.Link>
                         </Nav>
                         <Nav>
@@ -69,7 +78,8 @@ const App = () => {
             <Container fluid style={{ backgroundColor: '#d60001', textAlign: 'center' }}>
                 <Row>
                     <Col xs={12}>
-                        <img src={img2} alt="Graphic that urges voters to vote 'Yes' on Jan. 25" style={{ width: '75%' }} />
+                        {/* style={{ border: '10px solid black' }} */}
+                        <img src={img3} alt="Graphic that urges voters to vote 'Yes' on Jan. 25" style={{ width: '50%' }} />
                     </Col>
                 </Row>
             </Container>
@@ -84,12 +94,15 @@ const App = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    <Route path='about' element={<About />} />
+                    <Route path='key-facts' element={<KeyFacts />} />
                     <Route path='vote' element={<Vote />} />
+                    <Route path='testimonials' element={<Testimonials />} />
+                    <Route path='op-eds' element={<OpEds />} />
                     <Route path='contact' element={<Contact />} />
                 </Routes>
             </BrowserRouter>
-            <Navbar bg='dark' variant='dark'>
+
+            <Navbar bg='dark' variant='dark' sticky='bottom'>
                 <Container fluid>
                     <Navbar.Text className='navText m-2'>
                         <span style={{ fontSize: '20px' }}>Paid for by the Friends of the New Hoboken High School</span> <br />
