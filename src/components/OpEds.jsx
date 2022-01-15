@@ -32,6 +32,7 @@ const OpEds = () => {
             name: 'Ron Bautista',
             title: "'I believe our kids are worth it' so I'll vote yes on $241M Hoboken school referendum",
             link: 'https://hudsoncountyview.com/op-ed-i-believe-our-kids-are-worth-it-so-ill-vote-yes-on-241m-hoboken-school-referendum/',
+            video: 'https://www.facebook.com/RonBautistaNJ/videos/1367533730316439/?extid=NS-UNK-UNK-UNK-IOS_GK0T-GK1C',
         },
         {
             name: 'Frederick Cooke',
@@ -42,7 +43,7 @@ const OpEds = () => {
 
     const renderCard = (card, index) => {
         return (
-            <Col className='col-12 col-md-6 col-lg-4'>
+            <Col className='col-12 col-md-6 col-lg-4' key={index}>
                 <Card
                     style={{
                         fontFamily: 'Georgia, Times New Roman, Times, serif',
@@ -51,7 +52,6 @@ const OpEds = () => {
                         backgroundColor: index % 2 === 0 ? '#a7a6a6' : '#cba7a7',
                         height: '90%',
                     }}
-                    key={index}
                     className='box m-3'
                 >
                     <Card.Header>Author: {card.name}</Card.Header>
@@ -62,6 +62,11 @@ const OpEds = () => {
                         <Button variant='danger' onClick={() => window.open(`${card.link}`, '_blank')}>
                             Click to Read
                         </Button>
+                        {card.video ? (
+                            <Button variant='danger' onClick={() => window.open(`${card.video}`, '_blank')} style={{ margin: '10px' }}>
+                                Click to Watch
+                            </Button>
+                        ) : null}
                     </Card.Footer>
                 </Card>
             </Col>
@@ -71,39 +76,62 @@ const OpEds = () => {
     return (
         <Container fluid>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                <Col
-                    xs={12}
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        height: '50%',
-                        textAlign: 'center',
-                    }}
-                >
-                    <div
-                        class='fb-video'
-                        data-href='https://www.facebook.com/watch/?v=1367533730316439'
-                        data-width='300'
-                        data-show-text='false'
-                        data-allowfullscreen='true'
+                <Col className='col-12 col-md-6'>
+                    <Card
+                        style={{
+                            fontFamily: 'Georgia, Times New Roman, Times, serif',
+                            textAlign: 'center',
+                            borderRadius: '1rem',
+                            backgroundColor: '#a7a6a6',
+                            height: '90%',
+                        }}
+                        className='box m-3'
                     >
-                        <blockquote cite='https://www.facebook.com/RonBautistaNJ/videos/1367533730316439/' class='fb-xfbml-parse-ignore'>
-                            {/* eslint-disable-next-line */}
-                            <a href='https://www.facebook.com/RonBautistaNJ/videos/1367533730316439/'></a>
-                            <p>
-                                #TheRedwingWay! As a 2004 alum and as a parent, I’m voting YES on January 25th for a new state of the art #Hoboken
-                                High School. Here’s why: ✅Updated and dedicated science and engineering spaces, along with dedicated arts &amp;
-                                letters spaces, sports facilities and community space in time for the 2025-2026 school year. ✅ The Middle School will
-                                then be able to move from Demarest to the old high school building. The current HS will require some retrofitting that
-                                can be paid for out of the yearly Board of Ed Budget. The current Middle School does not have a full-sized gym, a full
-                                cafeteria or any dedicated arts &amp; music spaces. All of that will be addressed with the move. Plus, the population
-                                at the middle school has grown, and there is no more room at Demarest. ✅ Once the Middle School is relocated, the NJ
-                                School Development Authority will renovate the Demarest building, paid for fully by the state of NJ.
-                            </p>
-                            Posted by <a href='https://www.facebook.com/RonBautistaNJ'>Ron Bautista</a> on Wednesday, January 5, 2022
-                        </blockquote>
-                    </div>
+                        <Card.Header>Author: Mayor Ravinder Bhalla</Card.Header>
+                        <Card.Body>
+                            <Card.Title>Supporting our Public Schools January 25</Card.Title>
+                        </Card.Body>
+                        <Card.Footer>
+                            <Button
+                                variant='danger'
+                                onClick={() =>
+                                    window.open('https://www.ravinderbhalla.com/news/supporting-our-public-schools-on-january-25/', '_blank')
+                                }
+                            >
+                                Click to Read
+                            </Button>
+                        </Card.Footer>
+                    </Card>
+                </Col>
+                <Col className='col-12 col-md-6'>
+                    <Card
+                        style={{
+                            fontFamily: 'Georgia, Times New Roman, Times, serif',
+                            textAlign: 'center',
+                            borderRadius: '1rem',
+                            backgroundColor: '#cba7a7',
+                            height: '90%',
+                        }}
+                        className='box m-3'
+                    >
+                        <Card.Header>Author: Councilperson-At-Large Emily Jabbour</Card.Header>
+                        <Card.Body>
+                            <Card.Title>My support for the new Hoboken High School and upcoming referendum</Card.Title>
+                        </Card.Body>
+                        <Card.Footer>
+                            <Button
+                                variant='danger'
+                                onClick={() =>
+                                    window.open(
+                                        'https://medium.com/@hobokenemily/my-support-for-the-new-high-school-and-upcoming-referendum-9ee3c0d6702',
+                                        '_blank'
+                                    )
+                                }
+                            >
+                                Click to Read
+                            </Button>
+                        </Card.Footer>
+                    </Card>
                 </Col>
             </Row>
             <Row style={{ paddingBottom: '20px' }}>

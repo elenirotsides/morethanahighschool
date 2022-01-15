@@ -58,9 +58,9 @@ const Home = () => {
                         style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
                         src='https://www.youtube.com/embed/R_tavVjZfZ0'
                         title='YouTube video player'
-                        frameborder='0'
+                        frameBorder='0'
                         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                        allowfullscreen='true'
+                        allowFullScreen
                     ></iframe>
                 </Col>
                 <Col xs={12} xl={6} className='p-2'>
@@ -68,7 +68,7 @@ const Home = () => {
                         src='https://online.flippingbook.com/view/781450059/'
                         title='FlipBook'
                         height='400'
-                        frameborder='0'
+                        frameBorder='0'
                         scrolling='no'
                         style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
                         allowFullScreen

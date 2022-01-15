@@ -25,8 +25,8 @@ const KeyFacts = () => {
 
     const renderCard = (card, index) => {
         return (
-            <Col className='col-12 col-md-6 col-lg-4'>
-                <Card className='m-3 box' style={{ textAlign: 'center', height: '95%' }} key={index}>
+            <Col className='col-12 col-md-6 col-lg-4' key={index}>
+                <Card className='m-3 box' style={{ textAlign: 'center', height: '95%' }}>
                     <Card.Img variant='top' src={card.component} />
                     <Card.Body>
                         <Card.Title>{card.title}</Card.Title>
