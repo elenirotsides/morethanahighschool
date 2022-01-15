@@ -39,6 +39,11 @@ const OpEds = () => {
             title: "'Listen to the Experts' on New School Vote",
             link: 'https://www.tapinto.net/towns/hoboken/articles/reader-opinion-listen-to-the-experts-on-new-school-vote',
         },
+        {
+            name: 'Jessica Rodriguez',
+            title: "'Yes' Vote Gives Students Opportunities",
+            link: 'https://www.tapinto.net/towns/hoboken/articles/reader-opinion-yes-vote-gives-students-opportunities',
+        },
     ];
 
     const renderCard = (card, index) => {
