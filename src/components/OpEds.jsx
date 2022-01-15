@@ -77,8 +77,6 @@ const OpEds = () => {
                         display: 'block',
                         marginLeft: 'auto',
                         marginRight: 'auto',
-                        paddingTop: '20px',
-                        paddingBottom: '20px',
                         height: '50%',
                         textAlign: 'center',
                     }}

@@ -1,6 +1,4 @@
 import './App.css';
-// import img from './img/img1.png';
-// import img2 from './img/img2.png';
 import img3 from './img/img3.png';
 import logo from './img/logo.png';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
@@ -78,19 +76,11 @@ const App = () => {
             <Container fluid style={{ backgroundColor: '#d60001', textAlign: 'center' }}>
                 <Row>
                     <Col xs={12}>
-                        {/* style={{ border: '10px solid black' }} */}
                         <img src={img3} alt="Graphic that urges voters to vote 'Yes' on Jan. 25" style={{ width: '50%' }} />
                     </Col>
                 </Row>
             </Container>
-            {/* <Carousel variant='dark'>
-                <Carousel.Item style={{ height: '400px', backgroundColor: '#d60001' }}>
-                    <img src={img2} alt='First slide' style={{ height: '400px' }} />
-                </Carousel.Item>
-                <Carousel.Item style={{ height: '400px', backgroundColor: '#cb0a32' }}>
-                    <img src={logo} alt='Second slide' style={{ height: '400px' }} />
-                </Carousel.Item>
-            </Carousel> */}
+
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home />} />
@@ -102,7 +92,6 @@ const App = () => {
                     <Route path='*' element={<Navigate to='/' />} />
                 </Routes>
             </BrowserRouter>
-
             <Navbar bg='dark' variant='dark' sticky='bottom'>
                 <Container fluid>
                     <Navbar.Text className='navText m-2'>
