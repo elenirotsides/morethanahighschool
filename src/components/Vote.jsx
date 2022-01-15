@@ -18,7 +18,6 @@ const Vote = () => {
                     <div
                         style={{
                             border: ' 5px white solid',
-                            borderRadius: '2rem',
                             backgroundColor: 'white',
                             padding: '20px',
                         }}

@@ -17,8 +17,7 @@ const Contact = () => {
             </Col>
 
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                {/* <Col> */}{' '}
-                <div className='contact' style={{ border: ' 5px white solid', borderRadius: '2rem', backgroundColor: 'white' }}>
+                <div className='contact' style={{ border: ' 5px white solid', backgroundColor: 'white' }}>
                     <p>
                         We are a group of Hoboken parents and residents who are proud of our schools, invested in and committed to Hoboken's future,
                         and thrilled about the opportunity to make this major investment in our community. We believe a new High School can benefit
@@ -53,7 +52,6 @@ const Contact = () => {
                         </a>
                     </p>
                 </div>
-                {/* </Col> */}
             </Row>
         </Container>
     );

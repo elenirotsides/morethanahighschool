@@ -84,7 +84,6 @@ const Testimonials = () => {
                             fontFamily: 'Georgia, Times New Roman, Times, serif',
                             fontSize: '20px',
                             backgroundColor: index % 2 === 0 ? '#a7a6a6' : '#cba7a7',
-                            borderRadius: '1rem',
                         }}
                     >
                         <Card.Body>
