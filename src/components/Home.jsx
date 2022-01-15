@@ -26,7 +26,7 @@ const Home = () => {
                     <div style={{ border: ' 5px white solid', borderRadius: '2rem', backgroundColor: 'white' }}>
                         <h1 style={{ fontSize: '30px', textAlign: 'center' }}>We must act now to:</h1>
                         <p className='checkmark'>Address Critical Facility Gaps</p>
-                        <p className='checkmark'>Accomodate Growing Enrollment</p>
+                        <p className='checkmark'>Accommodate Growing Enrollment</p>
                         <p className='checkmark'>Provide Facilities Needed to Fully Implement the District's 21st Century Academic Curriculum</p>
                     </div>
                 </Col>
