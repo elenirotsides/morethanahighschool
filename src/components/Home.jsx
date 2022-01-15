@@ -29,7 +29,7 @@ const Home = () => {
                     <h1 style={{ fontSize: '30px', textAlign: 'center' }}>We must act now to:</h1>
                     <ul className='checkmarkListGroup'>
                         <li className='checkmark'>Address Critical Facility Gaps</li>
-                        <li className='checkmark'>Accomodate Growing Enrollment</li>
+                        <li className='checkmark'>Accommodate Growing Enrollment</li>
                         <li className='checkmark'>Provide Facilities Needed to Fully Implement the District's 21st Century Academic Curriculum</li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@ const Home = () => {
                         title='YouTube video player'
                         frameborder='0'
                         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                        allowfullscreen='true'
+                        allowFullScreen='true'
                     ></iframe>
                 </Col>
                 <Col xs={12} xl={6} className='p-2'>

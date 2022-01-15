@@ -88,14 +88,14 @@ const OpEds = () => {
                         data-href='https://www.facebook.com/watch/?v=1367533730316439'
                         data-width='300'
                         data-show-text='false'
-                        data-allowfullscreen='true'
+                        data-allowFullScreen='true'
                     >
                         <blockquote cite='https://www.facebook.com/RonBautistaNJ/videos/1367533730316439/' class='fb-xfbml-parse-ignore'>
                             {/* eslint-disable-next-line */}
                             <a href='https://www.facebook.com/RonBautistaNJ/videos/1367533730316439/'></a>
                             <p>
-                                #TheRedwingWay! As a 2004 alum and as a parent, I’m voting YES on January 25th for a new state of the art #Hoboken
-                                High School. Here’s why: ✅Updated and dedicated science and engineering spaces, along with dedicated arts &amp;
+                                #TheRedwingWay! As a 2004 alum and as a parent, I'm voting YES on January 25th for a new state of the art #Hoboken
+                                High School. Here's why: ✅Updated and dedicated science and engineering spaces, along with dedicated arts &amp;
                                 letters spaces, sports facilities and community space in time for the 2025-2026 school year. ✅ The Middle School will
                                 then be able to move from Demarest to the old high school building. The current HS will require some retrofitting that
                                 can be paid for out of the yearly Board of Ed Budget. The current Middle School does not have a full-sized gym, a full

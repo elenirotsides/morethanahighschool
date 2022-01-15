@@ -16,7 +16,7 @@ const Contact = () => {
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <div className='contact' style={{ border: ' 5px #a7a6a6 solid', borderRadius: '2rem', backgroundColor: '#a7a6a6' }}>
                     <p>
-                        We are a group of Hoboken parents and residents who are proud of our schools, invested in and committed to Hoboken’s future,
+                        We are a group of Hoboken parents and residents who are proud of our schools, invested in and committed to Hoboken's future,
                         and thrilled about the opportunity to make this major investment in our community. We believe a new High School can benefit
                         everyone in Hoboken. For our children and students - a public education journey that will be enhanced and more fully supported
                         beginning in their elementary and middle school years and culminating in a state-of-the-art high school featuring classrooms,
