@@ -1,20 +1,24 @@
 import '../App.css';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Contact = () => {
     return (
         <Container>
-            <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                {' '}
-                <div style={{ textAlign: 'center' }}>
-                    <div style={{ border: '5px #c40303 solid', borderRadius: '2rem', backgroundColor: '#c40303' }}>
-                        {' '}
-                        <h1 style={{ color: 'white', fontSize: '30px' }}>We are the Friends of the New Hoboken High School</h1>
+            <Col>
+                <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+                    {' '}
+                    <div style={{ textAlign: 'center' }}>
+                        <div style={{ border: '5px #c40303 solid', backgroundColor: '#c40303' }}>
+                            {' '}
+                            <h1 style={{ color: 'white', fontSize: '30px' }}>We are Friends of the New Hoboken High School</h1>
+                        </div>
                     </div>
-                </div>
-            </Row>
+                </Row>
+            </Col>
+
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                <div className='contact' style={{ border: ' 5px #a7a6a6 solid', borderRadius: '2rem', backgroundColor: '#a7a6a6' }}>
+                {/* <Col> */}{' '}
+                <div className='contact' style={{ border: ' 5px white solid', borderRadius: '2rem', backgroundColor: 'white' }}>
                     <p>
                         We are a group of Hoboken parents and residents who are proud of our schools, invested in and committed to Hoboken's future,
                         and thrilled about the opportunity to make this major investment in our community. We believe a new High School can benefit
@@ -49,6 +53,7 @@ const Contact = () => {
                         </a>
                     </p>
                 </div>
+                {/* </Col> */}
             </Row>
         </Container>
     );
