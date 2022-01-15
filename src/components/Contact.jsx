@@ -10,7 +10,7 @@ const Contact = () => {
                     <div style={{ textAlign: 'center' }}>
                         <div style={{ border: '5px #c40303 solid', backgroundColor: '#c40303' }}>
                             {' '}
-                            <h1 style={{ color: 'white', fontSize: '30px' }}>We are the Friends of the New Hoboken High School</h1>
+                            <h1 style={{ color: 'white', fontSize: '30px' }}>We are Friends of the New Hoboken High School</h1>
                         </div>
                     </div>
                 </Row>
