@@ -3,7 +3,7 @@ import './App.css';
 // import img2 from './img/img2.png';
 import img3 from './img/img3.png';
 import logo from './img/logo.png';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -99,6 +99,7 @@ const App = () => {
                     <Route path='testimonials' element={<Testimonials />} />
                     <Route path='op-eds' element={<OpEds />} />
                     <Route path='contact' element={<Contact />} />
+                    <Route path='*' element={<Navigate to='/' />} />
                 </Routes>
             </BrowserRouter>
 
