@@ -48,7 +48,6 @@ const OpEds = () => {
                     style={{
                         fontFamily: 'Georgia, Times New Roman, Times, serif',
                         textAlign: 'center',
-                        borderRadius: '1rem',
                         backgroundColor: index % 2 === 0 ? '#a7a6a6' : '#cba7a7',
                         height: '90%',
                     }}
@@ -81,7 +80,6 @@ const OpEds = () => {
                         style={{
                             fontFamily: 'Georgia, Times New Roman, Times, serif',
                             textAlign: 'center',
-                            borderRadius: '1rem',
                             backgroundColor: '#a7a6a6',
                             height: '90%',
                         }}
@@ -108,7 +106,6 @@ const OpEds = () => {
                         style={{
                             fontFamily: 'Georgia, Times New Roman, Times, serif',
                             textAlign: 'center',
-                            borderRadius: '1rem',
                             backgroundColor: '#cba7a7',
                             height: '90%',
                         }}

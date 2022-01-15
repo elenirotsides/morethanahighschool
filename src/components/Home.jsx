@@ -23,7 +23,7 @@ const Home = () => {
             </Row>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <Col>
-                    <div style={{ border: ' 5px white solid', borderRadius: '2rem', backgroundColor: 'white' }}>
+                    <div style={{ border: ' 5px white solid', backgroundColor: 'white' }}>
                         <h1 style={{ fontSize: '30px', textAlign: 'center' }}>We must act now to:</h1>
                         <p className='checkmark'>Address Critical Facility Gaps</p>
                         <p className='checkmark'>Accommodate Growing Enrollment</p>
