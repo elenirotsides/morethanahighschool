@@ -41,8 +41,8 @@ const OpEds = () => {
         },
         {
             name: 'Jessica Rodriguez',
-            title: "'Yes' Vote Gives Students Opportunities",
-            link: 'https://www.tapinto.net/towns/hoboken/articles/reader-opinion-yes-vote-gives-students-opportunities',
+            title: 'The new Hoboken High School will support equitable education for ALL students',
+            link: 'https://hudsoncountyview.com/letter-the-new-hoboken-high-school-will-support-equitable-education-for-all-students/',
         },
     ];
 
