@@ -1,5 +1,3 @@
-import '../App.css';
-import vote from '../img/vote.png';
 import { Row, Col, Container } from 'react-bootstrap';
 
 const Vote = () => {
@@ -9,7 +7,7 @@ const Vote = () => {
                 <Col xs={12} lg={3}>
                     <img
                         className='img-responsive'
-                        src={vote}
+                        src={'/img/vote.png'}
                         alt='Graphic that tells voters that the mail in application must be received by Jan. 18'
                         style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', maxWidth: '70%', paddingBottom: '20px' }}
                     />
