@@ -45,7 +45,7 @@ export default function Home() {
                                 onClick={() => setModalShow(true)}
                                 style={{ fontFamily: 'ScopeOne-Regular', color: '#c40303', fontWeight: 'bold' }}
                             >
-                                📣 Click to Sign Up for a Reminder to Vote! 📣
+                                📣 Click to Sign Up for a Reminder On January 25 to Vote 📣
                             </Button>
                         </div>
 
