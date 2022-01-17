@@ -10,7 +10,7 @@ export default function Layout({ children }) {
             <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
                 <Container fluid style={{ textAlign: 'center' }}>
                     <Navbar.Brand>
-                        <Link href='/'>
+                        <Link href='/' passHref>
                             <img
                                 src='/img/logo.png'
                                 // width={70}

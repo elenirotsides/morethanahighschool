@@ -1,7 +1,7 @@
 import { Container, Row, Card, CardGroup, Col, Spinner } from 'react-bootstrap';
 import { useState } from 'react';
 
-const testimonials = () => {
+const Testimonials = () => {
     const [loading, setLoading] = useState(true);
 
     const hideSpinner = () => {
@@ -118,4 +118,4 @@ const testimonials = () => {
     );
 };
 
-export default testimonials;
+export default Testimonials;
