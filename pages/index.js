@@ -1,7 +1,11 @@
 import Head from 'next/head';
-import { Container, Row, Col } from 'react-bootstrap';
+import { useState } from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import GoogleFormModal from '../components/GoogleFormModal';
 
 export default function Home() {
+    const [modalShow, setModalShow] = useState(false);
+
     return (
         <div>
             <Head>
@@ -38,9 +42,16 @@ export default function Home() {
                             {' '}
                             <h1 style={{ color: 'white', fontSize: '30px' }}>Together we can build Hoboken's future</h1>
                         </div>
+                        <div style={{ textAlign: 'center', paddingTop: '20px' }}>
+                            <Button variant='danger' size='lg' onClick={() => setModalShow(true)} style={{ fontFamily: 'ScopeOne-Regular' }}>
+                                Click to Sign Up for a Reminder to Vote!
+                            </Button>
+                        </div>
+
+                        <GoogleFormModal show={modalShow} onHide={() => setModalShow(false)} />
                     </Col>
                 </Row>
-                <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+                <Row style={{ paddingBottom: '20px' }}>
                     <Col>
                         <div style={{ border: ' 5px white solid', backgroundColor: 'white' }}>
                             <h1 style={{ fontSize: '30px', textAlign: 'center' }}>We must act now to:</h1>
