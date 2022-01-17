@@ -28,7 +28,7 @@ const KeyFacts = () => {
         return (
             <Col className='col-12 col-md-6 col-lg-4' key={index}>
                 <Card className='m-3 box' style={{ textAlign: 'center', height: '95%' }}>
-                    <Card.Img variant='top' src={card.img} />
+                    <Card.Img variant='top' src={card.img} alt={`Graphic that shows ${card.title}`} />
                     <Card.Body>
                         <Card.Title style={{ fontFamily: 'ScopeOne-Regular' }}>{card.title}</Card.Title>
                     </Card.Body>
