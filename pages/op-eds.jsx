@@ -1,4 +1,3 @@
-import '../App.css';
 import { Container, Row, Col, Card, CardGroup, Button } from 'react-bootstrap';
 
 const OpEds = () => {
@@ -11,7 +10,7 @@ const OpEds = () => {
         {
             name: 'Shweta Gursahani',
             title: 'Hoboken Students Deserve the Best, January 25 Referendum Offers that to Them',
-            link: 'https://www.tapinto.net/towns/hoboken/sections/education/articles/opinion-hoboken-students-deserve-the-best-january-25-referendum-offers-that-to-them',
+            link: 'https://www.tapinto.net/towns/hobnoken/sections/education/articles/opinion-hoboken-students-deserve-the-best-january-25-referendum-offers-that-to-them',
         },
         {
             name: 'Jenny Labendz',
@@ -51,7 +50,7 @@ const OpEds = () => {
             <Col className='col-12 col-md-6 col-lg-4' key={index}>
                 <Card
                     style={{
-                        fontFamily: 'Georgia, Times New Roman, Times, serif',
+                        fontFamily: 'ScopeOne-Regular',
                         textAlign: 'center',
                         backgroundColor: index % 2 === 0 ? '#a7a6a6' : '#cba7a7',
                         height: '90%',
@@ -63,11 +62,15 @@ const OpEds = () => {
                         <Card.Title>{card.title}</Card.Title>
                     </Card.Body>
                     <Card.Footer>
-                        <Button variant='danger' onClick={() => window.open(`${card.link}`, '_blank')}>
+                        <Button variant='danger' onClick={() => window.open(`${card.link}`, '_blank')} style={{ fontFamily: 'ScopeOne-Regular' }}>
                             Click to Read
                         </Button>
                         {card.video ? (
-                            <Button variant='danger' onClick={() => window.open(`${card.video}`, '_blank')} style={{ margin: '10px' }}>
+                            <Button
+                                variant='danger'
+                                onClick={() => window.open(`${card.video}`, '_blank')}
+                                style={{ margin: '10px', fontFamily: 'ScopeOne-Regular' }}
+                            >
                                 Click to Watch
                             </Button>
                         ) : null}
@@ -83,7 +86,7 @@ const OpEds = () => {
                 <Col className='col-12 col-md-6'>
                     <Card
                         style={{
-                            fontFamily: 'Georgia, Times New Roman, Times, serif',
+                            fontFamily: 'ScopeOne-Regular',
                             textAlign: 'center',
                             backgroundColor: '#a7a6a6',
                             height: '90%',
@@ -109,7 +112,7 @@ const OpEds = () => {
                 <Col className='col-12 col-md-6'>
                     <Card
                         style={{
-                            fontFamily: 'Georgia, Times New Roman, Times, serif',
+                            fontFamily: 'ScopeOne-Regular',
                             textAlign: 'center',
                             backgroundColor: '#cba7a7',
                             height: '90%',

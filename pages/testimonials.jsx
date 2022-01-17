@@ -1,4 +1,3 @@
-import '../App.css';
 import { Container, Row, Card, CardGroup, Col, Spinner } from 'react-bootstrap';
 import { useState } from 'react';
 
@@ -74,14 +73,14 @@ const Testimonials = () => {
 
     const renderCard = (card, index) => {
         return (
-            <Col className='col-12 col-md-6' key={index}>
+            <Col className='col-12 col-lg-6' key={index}>
                 <div className='m-3'>
                     <Card
                         // className='box'
                         style={{
                             textAlign: 'center',
                             width: '100%',
-                            fontFamily: 'Georgia, Times New Roman, Times, serif',
+                            fontFamily: 'ScopeOne-Regular',
                             fontSize: '20px',
                             backgroundColor: index % 2 === 0 ? '#a7a6a6' : '#cba7a7',
                         }}
