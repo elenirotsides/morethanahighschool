@@ -38,14 +38,20 @@ export default function Home() {
                             textAlign: 'center',
                         }}
                     >
+                        <div style={{ textAlign: 'center', paddingBottom: '20px' }}>
+                            <Button
+                                variant='light'
+                                size='lg'
+                                onClick={() => setModalShow(true)}
+                                style={{ fontFamily: 'ScopeOne-Regular', color: '#c40303', fontWeight: 'bold' }}
+                            >
+                                📣 Click to Sign Up for a Reminder to Vote! 📣
+                            </Button>
+                        </div>
+
                         <div style={{ border: ' 5px #c40303 solid', backgroundColor: '#c40303' }}>
                             {' '}
                             <h1 style={{ color: 'white', fontSize: '30px' }}>Together we can build Hoboken's future</h1>
-                        </div>
-                        <div style={{ textAlign: 'center', paddingTop: '20px' }}>
-                            <Button variant='danger' size='lg' onClick={() => setModalShow(true)} style={{ fontFamily: 'ScopeOne-Regular' }}>
-                                Click to Sign Up for a Reminder to Vote!
-                            </Button>
                         </div>
 
                         <GoogleFormModal show={modalShow} onHide={() => setModalShow(false)} />
