@@ -1,4 +1,5 @@
 import { Container, Row, Card, CardGroup, Button, Col } from 'react-bootstrap';
+import Head from 'next/head';
 
 const KeyFacts = () => {
     const cardData = [
@@ -44,6 +45,9 @@ const KeyFacts = () => {
 
     return (
         <Container>
+            <Head>
+                <title>Key Facts</title>
+            </Head>
             <Row style={{ paddingTop: '20px' }}>
                 <CardGroup className='grid justify-content-md-center'>{cardData.map(renderCard)}</CardGroup>
             </Row>{' '}

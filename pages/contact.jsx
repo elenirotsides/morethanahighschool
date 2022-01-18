@@ -1,8 +1,12 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import Head from 'next/head';
 
 const Contact = () => {
     return (
         <Container>
+            <Head>
+                <title>Who We Are</title>
+            </Head>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <Col>
                     {' '}

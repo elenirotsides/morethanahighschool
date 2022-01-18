@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card, CardGroup, Button } from 'react-bootstrap';
+import Head from 'next/head';
 
 const OpEds = () => {
     const cardData = [
@@ -77,6 +78,9 @@ const OpEds = () => {
 
     return (
         <Container fluid>
+            <Head>
+                <title>Op-Eds</title>
+            </Head>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <Col className='col-12 col-md-6'>
                     <Card

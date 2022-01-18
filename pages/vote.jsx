@@ -1,8 +1,12 @@
 import { Row, Col, Container } from 'react-bootstrap';
+import Head from 'next/head';
 
 const Vote = () => {
     return (
         <Container fluid>
+            <Head>
+                <title>Vote</title>
+            </Head>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <Col xs={12} lg={3}>
                     <img

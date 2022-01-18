@@ -1,5 +1,6 @@
 import { Container, Row, Card, CardGroup, Col, Spinner } from 'react-bootstrap';
 import { useState } from 'react';
+import Head from 'next/head';
 
 const Testimonials = () => {
     const [loading, setLoading] = useState(true);
@@ -111,6 +112,9 @@ const Testimonials = () => {
 
     return (
         <Container>
+            <Head>
+                <title>Testimonials</title>
+            </Head>
             <Row style={{ paddingTop: '20px' }}>
                 <CardGroup className='grid justify-content-md-center'>{cardData.map(renderCard)}</CardGroup>
             </Row>{' '}
