@@ -103,8 +103,8 @@ const Vote = () => {
                             }}
                         />
                         <p style={{ fontSize: '25px', fontWeight: 'bold', paddingTop: '30px', textAlign: 'center' }}>
-                            This plan is #MoreThanAHighSchool <br /> Please vote YES: School Strong = Hoboken Strong!
-                            <br /> Your vote matters!
+                            Your vote matters!
+                            <br /> This plan is #MoreThanAHighSchool <br /> Please vote YES: School Strong = Hoboken Strong!
                         </p>
                     </div>
                 </Col>
