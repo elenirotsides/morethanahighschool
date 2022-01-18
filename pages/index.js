@@ -45,7 +45,7 @@ export default function Home() {
                                 onClick={() => setModalShow(true)}
                                 style={{ fontFamily: 'ScopeOne-Regular', color: '#c40303', fontWeight: 'bold' }}
                             >
-                                📣 Click to Sign Up for a Reminder On January 25 to Vote 📣
+                                📣 Click to Receive a Reminder on Jan 25 to Vote 📣
                             </Button>
                         </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
                         <iframe
                             height='400'
                             style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
-                            src='https://www.youtube.com/embed/R_tavVjZfZ0'
+                            src='https://www.youtube.com/embed/JdnKeuRxrYc'
                             title='YouTube video player'
                             frameBorder='0'
                             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'

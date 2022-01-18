@@ -18,11 +18,6 @@ const OpEds = () => {
             link: 'https://www.tapinto.net/towns/hoboken/articles/reader-opinion-hoboken-s-new-high-school-is-absolutely-worth-the-money',
         },
         {
-            name: 'Emily Jabbour',
-            title: 'My support for the new Hoboken High School and upcoming referendum',
-            link: 'https://medium.com/@hobokenemily/my-support-for-the-new-high-school-and-upcoming-referendum-9ee3c0d6702',
-        },
-        {
             name: 'Hoboken Girl collection',
             title: 'Hoboken Residents Weigh in on the Hoboken High School Proposal, Plus Info on the 1/25 Vote',
             link: 'https://www.hobokengirl.com/hoboken-residents-weigh-in-on-the-hoboken-high-school-proposal-info-on-the-vote/',
