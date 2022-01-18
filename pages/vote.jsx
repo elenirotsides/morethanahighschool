@@ -61,7 +61,7 @@ const Vote = () => {
                             </span>
                             <br />
                             <br />
-                            If your Vote By Mail application was received by the County Clerk's Office by 3 pm on January 18th, you should receive a
+                            If your Vote By Mail application was received by the County Clerk's Office by 3pm on January 18th, you should receive a
                             ballot in the mail. Vote By Mail ballots are already postage paid, so you can drop it in a USPS mailbox, at the post
                             office or in the ballot drop box at City Hall.{' '}
                             <span style={{ color: '#c40303', fontWeight: 'bold' }}>
@@ -104,6 +104,7 @@ const Vote = () => {
                         />
                         <p style={{ fontSize: '25px', fontWeight: 'bold', paddingTop: '30px', textAlign: 'center' }}>
                             This plan is #MoreThanAHighSchool <br /> Please vote YES: School Strong = Hoboken Strong!
+                            <br /> Your vote matters!
                         </p>
                     </div>
                 </Col>
