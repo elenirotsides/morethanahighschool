@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import GoogleFormModal from '../components/GoogleFormModal';
+import PopUp from '../components/PopUp';
 
 export default function Home() {
     const [modalShow, setModalShow] = useState(false);
@@ -54,7 +54,11 @@ export default function Home() {
                             <h1 style={{ color: 'white', fontSize: '30px' }}>Together we can build Hoboken's future</h1>
                         </div>
 
-                        <GoogleFormModal show={modalShow} onHide={() => setModalShow(false)} />
+                        <PopUp
+                            link='https://docs.google.com/forms/d/e/1FAIpQLSfngPhZototEeNoXZCSXTBRR3peAYgG3GFDgxu4gpWv9s9KKw/viewform?embedded=true'
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                        />
                     </Col>
                 </Row>
                 <Row style={{ paddingBottom: '20px' }}>
