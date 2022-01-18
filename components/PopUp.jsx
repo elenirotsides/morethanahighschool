@@ -1,7 +1,7 @@
 import { Modal, Button, Spinner } from 'react-bootstrap';
 import { useState } from 'react';
 
-export default function GoogleFormModal(props) {
+export default function PopUp(props) {
     const [loading, setLoading] = useState(true);
 
     const hideSpinner = () => {
@@ -16,7 +16,7 @@ export default function GoogleFormModal(props) {
                     <Spinner animation='border' variant='danger' style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
                 ) : null}
                 <iframe
-                    src='https://docs.google.com/forms/d/e/1FAIpQLSfngPhZototEeNoXZCSXTBRR3peAYgG3GFDgxu4gpWv9s9KKw/viewform?embedded=true'
+                    src={props.link}
                     style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '100%', height: '500px' }}
                     onLoad={hideSpinner}
                 ></iframe>

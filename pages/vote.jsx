@@ -1,22 +1,18 @@
 import { Row, Col, Container } from 'react-bootstrap';
 import Head from 'next/head';
+import { useState } from 'react';
+import PopUp from '../components/PopUp';
 
 const Vote = () => {
+    const [modalShow, setModalShow] = useState({ show: false, link: '' });
+
     return (
         <Container fluid>
             <Head>
                 <title>Vote</title>
             </Head>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                <Col xs={12} lg={3}>
-                    <img
-                        className='img-responsive'
-                        src={'/img/vote.png'}
-                        alt='Graphic that tells voters that the mail in application must be received by Jan. 18'
-                        style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', maxWidth: '70%', paddingBottom: '20px' }}
-                    />
-                </Col>
-                <Col xs={12} lg={9}>
+                <Col>
                     <div
                         style={{
                             border: ' 5px white solid',
@@ -27,80 +23,86 @@ const Vote = () => {
                         <p style={{ fontSize: '20px' }}>
                             On January 25th, registered Hoboken residents will have the opportunity to vote on the proposed{' '}
                             <span
-                                onClick={() => window.open('https://online.flippingbook.com/view/781450059/10/', '_blank')}
+                                onClick={() => window.open('https://www.youtube.com/watch?v=JdnKeuRxrYc', '_blank')}
                                 style={{ cursor: 'pointer', color: 'blue' }}
                             >
                                 Hoboken Schools Long Range Facilities Plan
                             </span>{' '}
-                            (which includes the construction of a new high school) through a special referendum. While the deadline for voter
-                            registration has passed,{' '}
-                            <span style={{ color: '#ba0001', fontWeight: 'bold' }}>
-                                there is still time to request a Vote By Mail ballot if you act now!
-                            </span>{' '}
-                        </p>
-                        <p style={{ fontSize: '25px', fontWeight: 'bold' }}>You can request a Vote By Mail ballot in 3 easy steps:</p>
-                        <ol type='1' style={{ fontSize: '20px' }}>
-                            <li>Download a Vote By Mail application</li>
-                            <ul className='vote'>
-                                <li>
-                                    <span
-                                        onClick={() =>
-                                            window.open(
-                                                'https://www.nj.gov/state/elections/assets/pdf/forms-vote-by-mail/vote-by-mail-english-hudson.pdf',
-                                                '_blank'
-                                            )
-                                        }
-                                        style={{ cursor: 'pointer', color: 'blue' }}
-                                    >
-                                        Click here for English
-                                    </span>
-                                </li>
-                                <li>
-                                    <span
-                                        onClick={() =>
-                                            window.open(
-                                                'https://www.nj.gov/state/elections/assets/pdf/forms-vote-by-mail/vote-by-mail-spanish-hudson.pdf',
-                                                '_blank'
-                                            )
-                                        }
-                                        style={{ cursor: 'pointer', color: 'blue' }}
-                                    >
-                                        Click here for Spanish
-                                    </span>
-                                </li>
-                            </ul>
-                            <li>
-                                Complete the application in ink, then print and sign your name where indicated. In Box 1, check the box for “Special”
-                                and write “Referendum” (where it says “specify”) and enter 1/25/2022 for the date.
-                            </li>
-                            <li>
-                                Return your completed and signed application to the County Clerk. Applications must be received by the County Clerk{' '}
-                                <span style={{ color: '#ba0001', textDecoration: 'underline', fontWeight: 'bold' }}>no later than January 18th.</span>
-                            </li>
-                        </ol>
-                        <p style={{ fontSize: '20px' }}>
-                            Vote By Mail ballots are already postage paid, so you can drop it in a USPS mailbox, at the post office or in the ballot
-                            drop box at City Hall.{' '}
-                            <span style={{ color: '#ba0001', fontWeight: 'bold' }}>
-                                Your completed Vote By Mail ballot MUST be dropped off at City Hall or postmarked via USPS{' '}
-                                <span style={{ textDecoration: 'underline' }}>on or before January 25th</span> in order for your vote to count!
-                            </span>
-                        </p>
-                        <p style={{ fontSize: '20px' }}>
-                            Registered voters who do not request a Vote By Mail ballot will have the ability to vote in-person on January 25th from
-                            6am-8pm.{' '}
-                            <span style={{ color: '#ba0001', fontWeight: 'bold' }}>
-                                Find your polling site location{' '}
+                            (which includes the construction of a new high school) through a special referendum.
+                            <br />
+                            <br />
+                            <span style={{ color: '#c40303', fontWeight: 'bold' }}>
+                                In-person voting will take place on January 25th from 6am-8pm. Find your polling site location{' '}
                                 <span
                                     onClick={() => window.open('https://voter.svrs.nj.gov/polling-place-search', '_blank')}
                                     style={{ cursor: 'pointer', color: 'blue' }}
                                 >
                                     here
                                 </span>{' '}
-                                and make a plan now to vote!
+                                and make a plan <span style={{ textDecoration: 'underline' }}>now</span> to vote! If you'd like to receive a reminder
+                                on Voting Day, submit your email or cell number{' '}
+                                <span
+                                    onClick={() =>
+                                        setModalShow({
+                                            show: true,
+                                            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfngPhZototEeNoXZCSXTBRR3peAYgG3GFDgxu4gpWv9s9KKw/viewform?embedded=true',
+                                        })
+                                    }
+                                    style={{ cursor: 'pointer', color: 'blue' }}
+                                >
+                                    here
+                                </span>
+                                .
+                                <PopUp
+                                    link={modalShow.link}
+                                    show={modalShow.show}
+                                    onHide={() => setModalShow({ show: false, link: '', website: false })}
+                                />
                             </span>
+                            <br />
+                            <br />
+                            If your Vote By Mail application was received by the County Clerk's Office by 3pm on January 18th, you should receive a
+                            ballot in the mail. Vote By Mail ballots are already postage paid, so you can drop it in a USPS mailbox, at the post
+                            office or in the ballot drop box at City Hall.{' '}
+                            <span style={{ color: '#c40303', fontWeight: 'bold' }}>
+                                Your completed Vote By Mail ballot MUST be dropped off at City Hall or postmarked via USPS{' '}
+                                <span style={{ textDecoration: 'underline' }}>on or before January 25th </span>
+                                in order for your vote to count!
+                            </span>{' '}
+                            <br />
+                            <br />
                         </p>
-                        <p style={{ fontSize: '25px', fontWeight: 'bold' }}>
+                        <p style={{ textAlign: 'center', fontSize: '20px', textDecoration: 'underline' }}>Bond Proposal Question</p>
+                        <p style={{ fontSize: '20px' }}>
+                            The Board of Education of the City of Hoboken in the County of Hudson, New Jersey is authorized (a) to construct a new
+                            Hoboken High School at the John F. Kennedy Stadium site, including acquisition and installation of fixtures, furniture,
+                            equipment and any site work; and (b) to appropriate $241,050,000, and to issue bonds in an amount not to exceed
+                            $241,050,000.
+                            <br />
+                            <br />
+                            The final eligible costs for the projects approved by the New Jersey Commissioner of Education are $0. The project
+                            includes $241,050,000 for school facility construction elements in addition to the facilities efficiency standards
+                            developed by the Commissioner of Education or not otherwise eligible for State support pursuant to N.J.S.A. 18A:7G-(5g).
+                            The State debt service aid percentage will equal 0.0% of the annual debt service due with respect to the final eligible
+                            costs of the projects financed with bonds.
+                        </p>
+                        <p style={{ fontSize: '20px', fontWeight: 'bold', textAlign: 'center', paddingBottom: '20px' }}>
+                            Do you approve the Bond Proposal Question? Yes/No
+                        </p>
+
+                        <img
+                            src='/img/voteInfo.png'
+                            alt='Image of sample ballot'
+                            style={{
+                                display: 'block',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                maxWidth: '70%',
+
+                                border: '2px black solid',
+                            }}
+                        />
+                        <p style={{ fontSize: '25px', fontWeight: 'bold', paddingTop: '30px', textAlign: 'center' }}>
                             Your vote matters!
                             <br /> This plan is #MoreThanAHighSchool <br /> Please vote YES: School Strong = Hoboken Strong!
                         </p>
