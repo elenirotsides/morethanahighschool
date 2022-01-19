@@ -29,6 +29,11 @@ const KeyFacts = () => {
             title: 'The Dangers of “No for Now”: What a “no” vote really means',
             link: 'https://docs.google.com/document/d/18LIZKapeUQVCTrFDjXtO-QLUNgT4enBma9vJKrY-9MM/edit?usp=sharing',
         },
+        {
+            img: '/img/vocational.png',
+            title: 'Vocational Programs',
+            link: 'https://docs.google.com/document/d/11aeGKIMMNkVOGLXWUBKe1Tu3aRbX6kW_VBV7nKTGsvU/edit?usp=sharing',
+        },
     ];
 
     const renderCard = (card, index) => {
