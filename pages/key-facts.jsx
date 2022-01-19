@@ -21,6 +21,7 @@ const KeyFacts = () => {
         {
             img: '/img/academics2.png',
             title: 'Academics: The Statistics Speak for Themselves',
+            break: true,
             link: 'https://docs.google.com/document/d/1yOaJwTES4qaiwB4EHUDL-LLpVZcvS2ixWKz6NHXlspw/edit?usp=sharing',
         },
         {
@@ -36,7 +37,14 @@ const KeyFacts = () => {
                 <Card className='m-3 box' style={{ textAlign: 'center', height: '95%' }}>
                     <Card.Img variant='top' src={card.img} alt={`Graphic that shows ${card.title}`} />
                     <Card.Body>
-                        <Card.Title style={{ fontFamily: 'ScopeOne-Regular' }}>{card.title}</Card.Title>
+                        {card.break ? (
+                            <Card.Title style={{ fontFamily: 'ScopeOne-Regular' }}>
+                                Academics: The Statistics <br />
+                                Speak for Themselves
+                            </Card.Title>
+                        ) : (
+                            <Card.Title style={{ fontFamily: 'ScopeOne-Regular' }}>{card.title}</Card.Title>
+                        )}
                     </Card.Body>
                     <Card.Footer>
                         <Button variant='danger' onClick={() => window.open(`${card.link}`, '_blank')} style={{ fontFamily: 'ScopeOne-Regular' }}>
