@@ -98,7 +98,6 @@ const Vote = () => {
                                 marginLeft: 'auto',
                                 marginRight: 'auto',
                                 maxWidth: '70%',
-
                                 border: '2px black solid',
                             }}
                         />
