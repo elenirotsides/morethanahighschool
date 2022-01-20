@@ -40,6 +40,7 @@ export default function Home() {
                     >
                         <div style={{ textAlign: 'center', paddingBottom: '20px' }}>
                             <Button
+                                className='glow'
                                 variant='light'
                                 size='lg'
                                 onClick={() => setModalShow(true)}
