@@ -7,7 +7,7 @@ const Vote = () => {
     const [modalShow, setModalShow] = useState({ show: false, link: '' });
 
     return (
-        <Container fluid>
+        <Container>
             <Head>
                 <title>Vote</title>
             </Head>
