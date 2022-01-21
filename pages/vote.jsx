@@ -57,7 +57,7 @@ const Vote = () => {
                                     img={false}
                                     link={modalShow.link}
                                     show={modalShow.show}
-                                    onHide={() => setModalShow({ show: false, link: '', website: false })}
+                                    onHide={() => setModalShow({ show: false, link: '' })}
                                 />
                             </span>
                             <br />
