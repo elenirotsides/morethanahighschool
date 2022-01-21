@@ -7,7 +7,7 @@ const Vote = () => {
     const [modalShow, setModalShow] = useState({ show: false, link: '' });
 
     return (
-        <Container fluid>
+        <Container>
             <Head>
                 <title>Vote</title>
             </Head>
@@ -54,9 +54,10 @@ const Vote = () => {
                                 </span>
                                 .
                                 <PopUp
+                                    img={false}
                                     link={modalShow.link}
                                     show={modalShow.show}
-                                    onHide={() => setModalShow({ show: false, link: '', website: false })}
+                                    onHide={() => setModalShow({ show: false, link: '' })}
                                 />
                             </span>
                             <br />
@@ -98,7 +99,6 @@ const Vote = () => {
                                 marginLeft: 'auto',
                                 marginRight: 'auto',
                                 maxWidth: '70%',
-
                                 border: '2px black solid',
                             }}
                         />

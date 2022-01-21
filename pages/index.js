@@ -56,6 +56,7 @@ export default function Home() {
                         </div>
 
                         <PopUp
+                            img={false}
                             link='https://docs.google.com/forms/d/e/1FAIpQLSfngPhZototEeNoXZCSXTBRR3peAYgG3GFDgxu4gpWv9s9KKw/viewform?embedded=true'
                             show={modalShow}
                             onHide={() => setModalShow(false)}

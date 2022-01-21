@@ -41,6 +41,9 @@ export default function Layout({ children }) {
                             <Link href='/contact' passHref>
                                 <a className='navLink'>Who We Are</a>
                             </Link>
+                            <Link href='/spanish' passHref>
+                                <a className='navLink'>Recursos en Español</a>
+                            </Link>
                         </Nav>
                         <Nav>
                             <Nav.Link>
