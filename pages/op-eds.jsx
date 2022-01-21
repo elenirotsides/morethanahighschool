@@ -58,7 +58,7 @@ const OpEds = () => {
                     style={{
                         fontFamily: 'ScopeOne-Regular',
                         textAlign: 'center',
-                        backgroundColor: index % 2 === 0 ? '#a7a6a6' : '#cba7a7',
+                        backgroundColor: index % 2 === 0 ? '#cba7a7' : '#a7a6a6',
                         height: '90%',
                     }}
                     className='box m-3'
@@ -92,7 +92,7 @@ const OpEds = () => {
                 <title>Op-Eds</title>
             </Head>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                <Col className='col-12 '>
+                <Col className='col-12'>
                     <Card
                         style={{
                             fontFamily: 'ScopeOne-Regular',
@@ -123,61 +123,92 @@ const OpEds = () => {
                 </Col>
             </Row>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                <Col className='col-12 col-md-6'>
-                    <Card
-                        style={{
-                            fontFamily: 'ScopeOne-Regular',
-                            textAlign: 'center',
-                            backgroundColor: '#a7a6a6',
-                            height: '90%',
-                        }}
-                        className='box m-3'
-                    >
-                        <Card.Header>Author: Mayor Ravi Bhalla</Card.Header>
-                        <Card.Body>
-                            <Card.Title>Supporting our Public Schools January 25</Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <Button
-                                variant='danger'
-                                onClick={() =>
-                                    window.open('https://www.ravinderbhalla.com/news/supporting-our-public-schools-on-january-25/', '_blank')
-                                }
-                            >
-                                Click to Read
-                            </Button>
-                        </Card.Footer>
-                    </Card>
-                </Col>
-                <Col className='col-12 col-md-6'>
-                    <Card
-                        style={{
-                            fontFamily: 'ScopeOne-Regular',
-                            textAlign: 'center',
-                            backgroundColor: '#cba7a7',
-                            height: '90%',
-                        }}
-                        className='box m-3'
-                    >
-                        <Card.Header>Author: Councilperson-At-Large Emily Jabbour</Card.Header>
-                        <Card.Body>
-                            <Card.Title>My support for the new Hoboken High School and upcoming referendum</Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <Button
-                                variant='danger'
-                                onClick={() =>
-                                    window.open(
-                                        'https://medium.com/@hobokenemily/my-support-for-the-new-high-school-and-upcoming-referendum-9ee3c0d6702',
-                                        '_blank'
-                                    )
-                                }
-                            >
-                                Click to Read
-                            </Button>
-                        </Card.Footer>
-                    </Card>
-                </Col>
+                <CardGroup className='grid justify-content-md-center'>
+                    <Col className='col-12 col-md-6 col-lg-4'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#a7a6a6',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Mayor Ravi Bhalla</Card.Header>
+                            <Card.Body>
+                                <Card.Title>Supporting our Public Schools January 25</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() =>
+                                        window.open('https://www.ravinderbhalla.com/news/supporting-our-public-schools-on-january-25/', '_blank')
+                                    }
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col className='col-12 col-md-6 col-lg-4'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#cba7a7',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Councilperson-At-Large Emily Jabbour</Card.Header>
+                            <Card.Body>
+                                <Card.Title>My support for the new Hoboken High School and upcoming referendum</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() =>
+                                        window.open(
+                                            'https://medium.com/@hobokenemily/my-support-for-the-new-high-school-and-upcoming-referendum-9ee3c0d6702',
+                                            '_blank'
+                                        )
+                                    }
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col className='col-12 col-md-6 col-lg-4'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#a7a6a6',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Councilman-at-Large Joe Quintero</Card.Header>
+                            <Card.Body>
+                                <Card.Title>Hoboken councilman says vote yes on referendum: 'why shouldn't our schools be palaces'</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() =>
+                                        window.open(
+                                            'https://hudsoncountyview.com/letter-hoboken-councilman-says-vote-yes-on-referendum-why-shouldnt-our-schools-be-palaces/',
+                                            '_blank'
+                                        )
+                                    }
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                </CardGroup>
             </Row>
             <Row style={{ paddingBottom: '20px' }}>
                 <CardGroup className='grid justify-content-md-center'>{cardData.map(renderCard)}</CardGroup>
