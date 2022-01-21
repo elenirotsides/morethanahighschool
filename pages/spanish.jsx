@@ -35,6 +35,30 @@ const Spanish = () => {
                         }}
                     >
                         <p style={{ fontSize: '20px' }}>
+                            Este 25 de enero usted puede votar por una nueva Hoboken High School; ¡una casa para toda la comunidad! En la escuela
+                            pública todos los estudiantes de Hoboken son admitidos, sin importar sus ingresos ni el estatus migratorio. Les
+                            compartimos unas cuantas razones para votar “sí” en el referéndum: - Con estas nuevas instalaciones, nuestros estudiantes
+                            tendrán espacios dedicados para la ciencia y la tecnología, para las repertorio de clases de arte y música, y espacios
+                            deportivos listos para el año lectivo 2025-2026. - Una vez terminado el nuevo High School, la escuela primaria (Middle
+                            School) se podrá mudar al edificio actual del high school que será remodelado para esta creciente ola de estudiantes. Esto
+                            solucionará varios problemas que tenemos actualmente: la falta de gimnasio, cafetería, y espacios para el arte y la
+                            música. - Una vez que los estudiantes de primaria sean reubicados, la autoridad estatal invertirá en la remodelación del
+                            antiguo edificio Demarest; pagado en su totalidad por el Estado de Nueva Jersey. Este voto es crucial para todos los
+                            estudiantes.
+                        </p>
+                    </div>
+                </Col>
+            </Row>
+            <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+                <Col>
+                    <div
+                        style={{
+                            border: ' 5px white solid',
+                            backgroundColor: 'white',
+                            padding: '20px',
+                        }}
+                    >
+                        <p style={{ fontSize: '20px' }}>
                             Los votantes registrados que no solicitaron una boleta de voto por correo podrán votar en persona el 25 de enero de 6 a.
                             m. a 8 p. m. en su centro de votación.{' '}
                             <span style={{ color: 'red', fontWeight: 'bold' }}>
