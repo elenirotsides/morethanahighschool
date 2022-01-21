@@ -108,10 +108,8 @@ const Spanish = () => {
                     </div>
                 </Col>
             </Row>
-            <Row>
-                <p style={{ fontSize: '20px', textAlign: 'center', border: '2px white solid', backgroundColor: 'white', width: '50%' }}>
-                    (Haga clic en la imagen para ampliarla)
-                </p>
+            <Row style={{ paddingBottom: '20px' }}>
+                <p style={{ fontSize: '20px', textAlign: 'center', width: '100%' }}>(Haga clic en la imagen para ampliarla)</p>
                 <a onClick={setModalShow} style={{ cursor: 'pointer' }}>
                     <img
                         // className='img-responsive'
