@@ -44,6 +44,11 @@ const OpEds = () => {
             title: "'Our children can't afford' to have $241M Hoboken school referendum voted down",
             link: 'https://hudsoncountyview.com/letter-our-children-cant-afford-to-have-241m-hoboken-school-referendum-voted-down/',
         },
+        {
+            name: 'Ron Bautista',
+            title: "Why I'm voting 'Yes' for new Hoboken High School plan",
+            link: 'https://www.nj.com/opinion/2022/01/why-im-voting-yes-for-new-hoboken-high-school-plan-letter.html',
+        },
     ];
 
     const renderCard = (card, index) => {
