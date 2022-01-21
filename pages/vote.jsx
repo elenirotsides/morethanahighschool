@@ -54,6 +54,7 @@ const Vote = () => {
                                 </span>
                                 .
                                 <PopUp
+                                    img={false}
                                     link={modalShow.link}
                                     show={modalShow.show}
                                     onHide={() => setModalShow({ show: false, link: '', website: false })}
