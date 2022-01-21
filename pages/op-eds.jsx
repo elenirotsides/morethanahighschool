@@ -39,6 +39,11 @@ const OpEds = () => {
             title: 'The new Hoboken High School will support equitable education for ALL students',
             link: 'https://hudsoncountyview.com/letter-the-new-hoboken-high-school-will-support-equitable-education-for-all-students/',
         },
+        {
+            name: 'Hudson County View',
+            title: "'Our children can't afford' to have $241M Hoboken school referendum voted down",
+            link: 'https://hudsoncountyview.com/letter-our-children-cant-afford-to-have-241m-hoboken-school-referendum-voted-down/',
+        },
     ];
 
     const renderCard = (card, index) => {
@@ -82,6 +87,37 @@ const OpEds = () => {
                 <title>Op-Eds</title>
             </Head>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+                <Col className='col-12 '>
+                    <Card
+                        style={{
+                            fontFamily: 'ScopeOne-Regular',
+                            textAlign: 'center',
+                            backgroundColor: '#cba7a7',
+                            height: '90%',
+                        }}
+                        className='box m-3'
+                    >
+                        <Card.Header>Authors: Madison Walia-Peters and Morgan Walia-Peters</Card.Header>
+                        <Card.Body>
+                            <Card.Title>Current Hoboken High School Students Say 'Vote “YES” for a Better Hoboken Community'</Card.Title>
+                        </Card.Body>
+                        <Card.Footer>
+                            <Button
+                                variant='danger'
+                                onClick={() =>
+                                    window.open(
+                                        'https://www.tapinto.net/towns/hoboken/sections/elections/articles/reader-opinion-current-hoboken-high-school-students-say-vote-yes-for-a-better-hoboken-community',
+                                        '_blank'
+                                    )
+                                }
+                            >
+                                Click to Read
+                            </Button>
+                        </Card.Footer>
+                    </Card>
+                </Col>
+            </Row>
+            <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <Col className='col-12 col-md-6'>
                     <Card
                         style={{
@@ -92,7 +128,7 @@ const OpEds = () => {
                         }}
                         className='box m-3'
                     >
-                        <Card.Header>Author: Mayor Ravinder Bhalla</Card.Header>
+                        <Card.Header>Author: Mayor Ravi Bhalla</Card.Header>
                         <Card.Body>
                             <Card.Title>Supporting our Public Schools January 25</Card.Title>
                         </Card.Body>
