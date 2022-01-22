@@ -81,20 +81,20 @@ const Spanish = () => {
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <Col>
                     <Carousel variant='dark'>
-                        <Carousel.Item style={{ height: '400px', backgroundColor: '#c40303', textAlign: 'center' }}>
-                            <img src={'/img/carosel1.jpg'} alt='First slide' style={{ height: '400px' }} />
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel1.jpg'} alt='First slide' style={{ height: '350px' }} />
                         </Carousel.Item>
-                        <Carousel.Item style={{ height: '400px', backgroundColor: '#c40303', textAlign: 'center' }}>
-                            <img src={'/img/carosel2.jpg'} alt='Second slide' style={{ height: '400px' }} />
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel2.jpg'} alt='Second slide' style={{ height: '350px' }} />
                         </Carousel.Item>
-                        <Carousel.Item style={{ height: '400px', backgroundColor: '#c40303', textAlign: 'center' }}>
-                            <img src={'/img/carosel3.jpg'} alt='Second slide' style={{ height: '400px' }} />
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel3.jpg'} alt='Second slide' style={{ height: '350px' }} />
                         </Carousel.Item>
-                        <Carousel.Item style={{ height: '400px', backgroundColor: '#c40303', textAlign: 'center' }}>
-                            <img src={'/img/carosel4.jpg'} alt='Second slide' style={{ height: '400px' }} />
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel4.jpg'} alt='Second slide' style={{ height: '350px' }} />
                         </Carousel.Item>
-                        <Carousel.Item style={{ height: '400px', backgroundColor: '#c40303', textAlign: 'center' }}>
-                            <img src={'/img/carosel5.jpg'} alt='Second slide' style={{ height: '400px' }} />
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel5.jpg'} alt='Second slide' style={{ height: '350px' }} />
                         </Carousel.Item>
                     </Carousel>
                 </Col>
