@@ -49,6 +49,16 @@ const OpEds = () => {
             title: "Why I'm voting 'Yes' for new Hoboken High School plan",
             link: 'https://www.nj.com/opinion/2022/01/why-im-voting-yes-for-new-hoboken-high-school-plan-letter.html',
         },
+        {
+            name: 'James A. Castiglione, Ph.D.',
+            title: 'Vote YES for a Transformational Vision for All Hoboken',
+            link: 'https://www.tapinto.net/towns/hoboken/articles/reader-opinion-vote-yes-for-a-transformational-vision-for-all-hoboken',
+        },
+        {
+            name: 'Ailene McGuirk',
+            title: 'It is Time for Hoboken to Fund School Facilities',
+            link: 'https://www.tapinto.net/towns/hoboken/sections/education/articles/reader-opinion-it-is-time-for-hoboken-to-fund-school-facilities',
+        },
     ];
 
     const renderCard = (card, index) => {
