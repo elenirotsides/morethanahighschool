@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Carousel } from 'react-bootstrap';
 import PopUp from '../components/PopUp';
 import { useState } from 'react';
 
@@ -76,6 +76,27 @@ const Spanish = () => {
                             ¡Su voto importa! Este plan es #MásqueUnaEscuela. Por favor vote SÍ: School Strong = ¡Hoboken Strong!
                         </p>
                     </div>
+                </Col>
+            </Row>
+            <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+                <Col>
+                    <Carousel variant='dark'>
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel1.jpg'} alt='First slide' style={{ height: '350px' }} />
+                        </Carousel.Item>
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel2.jpg'} alt='Second slide' style={{ height: '350px' }} />
+                        </Carousel.Item>
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel3.jpg'} alt='Second slide' style={{ height: '350px' }} />
+                        </Carousel.Item>
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel4.jpg'} alt='Second slide' style={{ height: '350px' }} />
+                        </Carousel.Item>
+                        <Carousel.Item style={{ height: '350px', backgroundColor: '#c40303', textAlign: 'center' }}>
+                            <img src={'/img/carosel5.jpg'} alt='Second slide' style={{ height: '350px' }} />
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
             </Row>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
