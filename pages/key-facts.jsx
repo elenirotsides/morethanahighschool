@@ -30,6 +30,11 @@ const KeyFacts = () => {
             link: 'https://docs.google.com/document/d/11aeGKIMMNkVOGLXWUBKe1Tu3aRbX6kW_VBV7nKTGsvU/edit?usp=sharing',
         },
         {
+            img: '/img/plan.jpg',
+            title: 'A Plan for All Ages',
+            link: 'https://docs.google.com/document/d/1stPjy9fETKxh5q9MYvlCXm6EQDA6o4xx-DUW6VU1P2Q/edit?usp=sharing',
+        },
+        {
             img: '/img/Dangers.png',
             title: 'The Dangers of “No for Now”: What a “no” vote really means',
             link: 'https://docs.google.com/document/d/18LIZKapeUQVCTrFDjXtO-QLUNgT4enBma9vJKrY-9MM/edit?usp=sharing',
