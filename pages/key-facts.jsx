@@ -14,6 +14,11 @@ const KeyFacts = () => {
             link: 'https://docs.google.com/document/d/1vumTHAgDrjjAXTqi7obbFMIAiSHKqfmlmk-Fn5x_1E8/edit?usp=sharing',
         },
         {
+            img: '/img/vocational.png',
+            title: 'Vocational Programs',
+            link: 'https://docs.google.com/document/d/11aeGKIMMNkVOGLXWUBKe1Tu3aRbX6kW_VBV7nKTGsvU/edit?usp=sharing',
+        },
+        {
             img: '/img/Academics.png',
             title: 'Academics: School Strong = Hoboken Strong',
             link: 'https://docs.google.com/document/d/14CpmralkxxsLSokm5-kqDyxIDMWjHZB_DIEGDBQfAEE/edit?usp=sharing',
@@ -23,11 +28,6 @@ const KeyFacts = () => {
             title: 'Academics: The Statistics Speak for Themselves',
             break: true,
             link: 'https://docs.google.com/document/d/1yOaJwTES4qaiwB4EHUDL-LLpVZcvS2ixWKz6NHXlspw/edit?usp=sharing',
-        },
-        {
-            img: '/img/vocational.png',
-            title: 'Vocational Programs',
-            link: 'https://docs.google.com/document/d/11aeGKIMMNkVOGLXWUBKe1Tu3aRbX6kW_VBV7nKTGsvU/edit?usp=sharing',
         },
         {
             img: '/img/plan.jpg',
