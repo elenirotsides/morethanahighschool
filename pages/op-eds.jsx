@@ -54,11 +54,6 @@ const OpEds = () => {
             title: 'Vote YES for a Transformational Vision for All Hoboken',
             link: 'https://www.tapinto.net/towns/hoboken/articles/reader-opinion-vote-yes-for-a-transformational-vision-for-all-hoboken',
         },
-        {
-            name: 'Ailene McGuirk',
-            title: 'It is Time for Hoboken to Fund School Facilities',
-            link: 'https://www.tapinto.net/towns/hoboken/sections/education/articles/reader-opinion-it-is-time-for-hoboken-to-fund-school-facilities',
-        },
     ];
 
     const renderCard = (card, index) => {
@@ -131,6 +126,68 @@ const OpEds = () => {
                         </Card.Footer>
                     </Card>
                 </Col>
+            </Row>
+            <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+                <CardGroup>
+                    <Col className='col-12 col-md-6'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#a7a6a6',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Ailene McGuirk</Card.Header>
+                            <Card.Body>
+                                <Card.Title>It is Time for Hoboken to Fund School Facilities</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() =>
+                                        window.open(
+                                            'https://www.tapinto.net/towns/hoboken/sections/education/articles/reader-opinion-it-is-time-for-hoboken-to-fund-school-facilities',
+                                            '_blank'
+                                        )
+                                    }
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col className='col-12 col-md-6'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#cba7a7',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Sharyn Angley</Card.Header>
+                            <Card.Body>
+                                <Card.Title>New Hoboken High School, It's About the Students</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() =>
+                                        window.open(
+                                            'https://www.tapinto.net/towns/hoboken/sections/education/articles/reader-opinion-new-hoboken-high-school-it-s-about-the-students',
+                                            '_blank'
+                                        )
+                                    }
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                </CardGroup>
             </Row>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <CardGroup className='grid justify-content-md-center'>
