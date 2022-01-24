@@ -40,7 +40,7 @@ const OpEds = () => {
             link: 'https://hudsoncountyview.com/letter-the-new-hoboken-high-school-will-support-equitable-education-for-all-students/',
         },
         {
-            name: 'Hudson County View',
+            name: 'Rastko Tomin',
             title: "'Our children can't afford' to have $241M Hoboken school referendum voted down",
             link: 'https://hudsoncountyview.com/letter-our-children-cant-afford-to-have-241m-hoboken-school-referendum-voted-down/',
         },
