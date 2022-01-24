@@ -54,6 +54,11 @@ const OpEds = () => {
             title: 'Vote YES for a Transformational Vision for All Hoboken',
             link: 'https://www.tapinto.net/towns/hoboken/articles/reader-opinion-vote-yes-for-a-transformational-vision-for-all-hoboken',
         },
+        {
+            name: 'Frank Magaletta',
+            title: "Impact of New Hoboken High School Will be 'Profound'",
+            link: 'https://www.tapinto.net/towns/hoboken/articles/reader-opinion-impact-of-new-hoboken-high-school-will-be-profound',
+        },
     ];
 
     const renderCard = (card, index) => {

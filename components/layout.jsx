@@ -3,20 +3,22 @@ import Link from 'next/link';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import { useState } from 'react';
 
 export default function Layout({ children }) {
+    const [expand, setExpand] = useState(false);
+
     return (
         <div style={{ backgroundColor: '#b1b1b1' }}>
-            <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+            <Navbar collapseOnSelect expanded={expand} expand='lg' bg='dark' variant='dark' onToggle={() => setExpand(true)}>
                 <Container fluid style={{ textAlign: 'center' }}>
                     <Navbar.Brand>
                         <Link href='/' passHref>
                             <img
                                 src='/img/logo.png'
-                                // width={70}
-                                // height={70}
                                 style={{ width: '70px', marginRight: '30px', cursor: 'pointer' }}
                                 alt='The logo of "Friends of the New Hoboken High School" organization'
+                                onClick={() => setExpand(false)}
                             />
                         </Link>
                     </Navbar.Brand>
@@ -24,25 +26,39 @@ export default function Layout({ children }) {
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav className='me-auto'>
                             <Link href='/' passHref>
-                                <a className='navLink'>Home</a>
+                                <a className='navLink' onClick={() => setExpand(false)}>
+                                    Home
+                                </a>
                             </Link>
                             <Link href='/key-facts' passHref>
-                                <a className='navLink'>Key Facts</a>
+                                <a className='navLink' onClick={() => setExpand(false)}>
+                                    Key Facts
+                                </a>
                             </Link>
                             <Link href='/vote' passHref>
-                                <a className='navLink'>Vote</a>
+                                <a className='navLink' onClick={() => setExpand(false)}>
+                                    Vote
+                                </a>
                             </Link>
                             <Link href='/testimonials' passHref>
-                                <a className='navLink'>Testimonials</a>
+                                <a className='navLink' onClick={() => setExpand(false)}>
+                                    Testimonials
+                                </a>
                             </Link>
                             <Link href='/op-eds' passHref>
-                                <a className='navLink'>Op-Eds</a>
+                                <a className='navLink' onClick={() => setExpand(false)}>
+                                    Op-Eds
+                                </a>
                             </Link>
                             <Link href='/contact' passHref>
-                                <a className='navLink'>Who We Are</a>
+                                <a className='navLink' onClick={() => setExpand(false)}>
+                                    Who We Are
+                                </a>
                             </Link>
                             <Link href='/spanish' passHref>
-                                <a className='navLink'>Recursos en Español</a>
+                                <a className='navLink' onClick={() => setExpand(false)}>
+                                    Recursos en Español
+                                </a>
                             </Link>
                         </Nav>
                         <Nav>
