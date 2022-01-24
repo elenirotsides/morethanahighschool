@@ -4,6 +4,11 @@ import Head from 'next/head';
 const OpEds = () => {
     const cardData = [
         {
+            name: 'Jim Doyle',
+            title: "You Can't Put a Price on Quality Education",
+            link: 'https://www.tapinto.net/towns/hoboken/sections/elections/articles/reader-opinion-you-can-t-put-a-price-on-quality-education',
+        },
+        {
             name: 'Erica Gavin',
             title: 'The Superintendent of Hoboken Public Schools Deserves Your Respect',
             link: 'https://hudsonreporter.com/2021/12/17/the-superintendent-of-hoboken-public-schools-deserves-your-respect/',
@@ -68,7 +73,7 @@ const OpEds = () => {
                     style={{
                         fontFamily: 'ScopeOne-Regular',
                         textAlign: 'center',
-                        backgroundColor: index % 2 === 0 ? '#cba7a7' : '#a7a6a6',
+                        backgroundColor: index % 2 === 0 ? '#a7a6a6' : '#cba7a7',
                         height: '90%',
                     }}
                     className='box m-3'
@@ -133,8 +138,8 @@ const OpEds = () => {
                 </Col>
             </Row>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                <CardGroup>
-                    <Col className='col-12 col-md-6'>
+                <CardGroup className='grid justify-content-md-center'>
+                    <Col className='col-12 col-md-6 col-lg-4'>
                         <Card
                             style={{
                                 fontFamily: 'ScopeOne-Regular',
@@ -163,7 +168,7 @@ const OpEds = () => {
                             </Card.Footer>
                         </Card>
                     </Col>
-                    <Col className='col-12 col-md-6'>
+                    <Col className='col-12 col-md-6 col-lg-4'>
                         <Card
                             style={{
                                 fontFamily: 'ScopeOne-Regular',
@@ -192,6 +197,35 @@ const OpEds = () => {
                             </Card.Footer>
                         </Card>
                     </Col>
+                    <Col className='col-12 col-md-6 col-lg-4'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#a7a6a6',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Joyce Simons</Card.Header>
+                            <Card.Body>
+                                <Card.Title>We Committed to Hoboken Because of the Public Schools</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() =>
+                                        window.open(
+                                            'https://www.tapinto.net/towns/hoboken/sections/elections/articles/reader-opinion-we-committed-to-hoboken-because-of-the-public-schools',
+                                            '_blank'
+                                        )
+                                    }
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
                 </CardGroup>
             </Row>
             <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
@@ -201,7 +235,7 @@ const OpEds = () => {
                             style={{
                                 fontFamily: 'ScopeOne-Regular',
                                 textAlign: 'center',
-                                backgroundColor: '#a7a6a6',
+                                backgroundColor: '#cba7a7',
                                 height: '90%',
                             }}
                             className='box m-3'
@@ -227,7 +261,7 @@ const OpEds = () => {
                             style={{
                                 fontFamily: 'ScopeOne-Regular',
                                 textAlign: 'center',
-                                backgroundColor: '#cba7a7',
+                                backgroundColor: '#a7a6a6',
                                 height: '90%',
                             }}
                             className='box m-3'
@@ -256,7 +290,7 @@ const OpEds = () => {
                             style={{
                                 fontFamily: 'ScopeOne-Regular',
                                 textAlign: 'center',
-                                backgroundColor: '#a7a6a6',
+                                backgroundColor: '#cba7a7',
                                 height: '90%',
                             }}
                             className='box m-3'
