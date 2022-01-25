@@ -137,7 +137,7 @@ const OpEds = () => {
                     </Card>
                 </Col>
             </Row>
-            <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+            <Row style={{ paddingTop: '30px', paddingBottom: '20px' }}>
                 <CardGroup className='grid justify-content-md-center'>
                     <Col className='col-12 col-md-6 col-lg-4'>
                         <Card
@@ -217,6 +217,119 @@ const OpEds = () => {
                                     onClick={() =>
                                         window.open(
                                             'https://www.tapinto.net/towns/hoboken/sections/elections/articles/reader-opinion-we-committed-to-hoboken-because-of-the-public-schools',
+                                            '_blank'
+                                        )
+                                    }
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col className='col-12 col-md-6 col-lg-4'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#cba7a7',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Sheillah Dallara</Card.Header>
+                            <Card.Body>
+                                <Card.Title>
+                                    The investment in children with disabilities is one of the most important responsibilities in our public education
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() =>
+                                        window.open(
+                                            'https://hudsonreporter.com/2022/01/24/the-investment-in-children-with-disabilities-is-one-of-the-most-important-responsibilities-in-our-public-education/',
+                                            '_blank'
+                                        )
+                                    }
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col className='col-12 col-md-6 col-lg-4'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#a7a6a6',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Malani Cademartori</Card.Header>
+                            <Card.Body>
+                                <Card.Title>The Singular Purpose</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() => window.open('https://hudsonreporter.com/2022/01/24/the-singular-purpose/', '_blank')}
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col className='col-12 col-md-6 col-lg-4'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#cba7a7',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Melanie Tekirian</Card.Header>
+                            <Card.Body>
+                                <Card.Title>New High School Means Access and Opportunities to all Students</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() =>
+                                        window.open(
+                                            'https://www.tapinto.net/towns/hoboken/sections/education/articles/reader-opinion-new-high-school-means-access-and-opportunities-to-all-students',
+                                            '_blank'
+                                        )
+                                    }
+                                >
+                                    Click to Read
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col className='col-12 col-md-6 col-lg-4'>
+                        <Card
+                            style={{
+                                fontFamily: 'ScopeOne-Regular',
+                                textAlign: 'center',
+                                backgroundColor: '#a7a6a6',
+                                height: '90%',
+                            }}
+                            className='box m-3'
+                        >
+                            <Card.Header>Author: Alejandro De La Torre, Jr.</Card.Header>
+                            <Card.Body>
+                                <Card.Title>New Hoboken High School, Imagine the Possibilities</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button
+                                    variant='danger'
+                                    onClick={() =>
+                                        window.open(
+                                            'https://www.tapinto.net/towns/hoboken/sections/education/articles/reader-opinion-new-hoboken-high-school-imagine-the-possbilities',
                                             '_blank'
                                         )
                                     }
