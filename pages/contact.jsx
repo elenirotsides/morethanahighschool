@@ -57,7 +57,17 @@ const Contact = () => {
                             <li>Renee Perry</li>
                             <li>Tatyana Zlotsky </li>
                         </ul>
-
+                        <p
+                            onClick={() =>
+                                window.open(
+                                    'https://docs.google.com/document/d/1TDpJgn8k5ockuVKSdUbTjcY4bC2y8Uj2SpWlg8mAfQo/edit?usp=sharing',
+                                    '_blank'
+                                )
+                            }
+                            style={{ cursor: 'pointer', color: 'blue' }}
+                        >
+                            Full List of Ambassadors
+                        </p>
                         <p style={{ fontStyle: 'italic' }}>
                             <span onClick={() => window.open('http://bit.ly/3KbbGvf', '_blank')} style={{ cursor: 'pointer', color: 'blue' }}>
                                 This folder
