@@ -64,6 +64,11 @@ const OpEds = () => {
             title: "Impact of New Hoboken High School Will be 'Profound'",
             link: 'https://www.tapinto.net/towns/hoboken/articles/reader-opinion-impact-of-new-hoboken-high-school-will-be-profound',
         },
+        {
+            name: 'Nicole Jala',
+            title: 'Information Is Undeniably Powerful',
+            link: 'https://www.tapinto.net/towns/hoboken/sections/education/articles/information-is-undeniably-powerful',
+        },
     ];
 
     const renderCard = (card, index) => {
