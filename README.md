@@ -1,6 +1,6 @@
 # Hi
 
-I was hired by the 'Friends of the New Hoboken High School' organization in Hoboken, NJ to design and develop a website that served as a hub of information in favor of supporting the Referendum to build a new high school which was voted on by Hoboken residents on January 25, 2022. Now that the vote is over, I've gotten rid of the original domain and am instead hosting the website on a Vercel domain for archive purposes.
+I was hired by the 'Friends of the New Hoboken High School' organization in Hoboken, NJ to design and develop a website that served as a hub of information in favor of supporting the Referendum to build a new high school which was voted on by Hoboken residents on January 25, 2022. Now that the vote is over, I am no longer using the old domain and am instead hosting the website on a Vercel domain for archive purposes.
 
 _Please note that this website is no longer being maintained, so some bits of the website may not work as time goes on due to things being deleted by the owners (like YouTube videos and google docs, for example)._
 
